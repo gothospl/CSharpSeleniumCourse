@@ -21,7 +21,7 @@ namespace Section6
         {
             Car thisCar = new Car("black", 4, false);
 
-            thisCar.Accelerate();
+            thisCar.Accelerate(55);
         }
 
         [TestMethod]

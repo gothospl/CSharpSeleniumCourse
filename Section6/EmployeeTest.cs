@@ -15,7 +15,14 @@ namespace Section6
             StringAssert.Equals("New York", jobLocation);
 
             employee1.JobTitle = "Manager";
-            StringAssert.Equals("Boston", jobLocation);
+            Assert.AreEqual("Boston", jobLocation);
+        }
+
+        [TestMethod]
+        public void Test_To_String()
+        {
+            Employee employee1 = new Employee("John Wood", 96669, "Manager");
+            Console.WriteLine(employee1);
         }
     }
 }

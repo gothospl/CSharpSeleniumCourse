@@ -40,5 +40,10 @@ namespace Section6
 
             return "New York";
         }
+
+        public override string ToString()
+        {
+            return $"{EmployeeID} {Name} Job Title: {JobTitle}";
+        }
     }
 }

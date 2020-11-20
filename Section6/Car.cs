@@ -38,16 +38,20 @@ namespace Section6
 
         public bool IsConvertable { get; set; }
 
+        public int Speed { get; set; }
+
         public Car(string carColor, int doors, bool convertable)
         {
             Color = carColor;
             NumberOfDoors = doors;
             IsConvertable = convertable;
+            Speed = 0;
         }
 
-        public void Accelerate()
+        public void Accelerate(int acc)
         {
-            Console.WriteLine("Speeding up!");
+            Speed += acc;
+            Console.WriteLine($"Speeding up by {acc}! Running at {Speed} kph!");
         }
 
         public bool FamilyCar()
