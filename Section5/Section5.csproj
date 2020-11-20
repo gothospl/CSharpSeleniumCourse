@@ -50,6 +50,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DecimalOperations.cs" />
+    <Compile Include="EqualityAndRelationship.cs" />
     <Compile Include="FloatingPointOperations.cs" />
     <Compile Include="IntegerOperations.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
