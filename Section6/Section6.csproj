@@ -53,6 +53,7 @@
     <Compile Include="CarTest.cs" />
     <Compile Include="Employee.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Section6Quiz.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

@@ -11,12 +11,12 @@ namespace Section6
         public int EmployeeNumber { get; set; }
         public string FirstName { get; set; }
         public string LastName { get; set; }
-        public DateTime DateOfHire { get; set; }
+        public string DateOfHire { get; set; }
         public string JobDescription { get; set; }
         public string Department { get; set; }
         public int MonthlySalary { get; set; }
 
-        public Employee(int eNumber, string fName, string lName, DateTime hireDate, string jobDesc, string dept, int salary)
+        public Employee(int eNumber, string fName, string lName, string hireDate, string jobDesc, string dept, int salary)
         {
             EmployeeNumber = eNumber;
             FirstName = fName;
@@ -27,14 +27,14 @@ namespace Section6
             MonthlySalary = salary;
         }
 
-        public string FirstNameSpaceLastName(string fName, string lName)
+        public string FirstNameSpaceLastName()
         {
-            return $"{fName} {lName}";
+            return $"{this.FirstName} {this.LastName}";
         }
 
-        public string LastNameCommaSpaceFirstName(string fName, string lName)
+        public string LastNameCommaSpaceFirstName()
         {
-            return $"{lName}, {fName}";
+            return $"{this.LastName}, {this.FirstName}";
         }
     }
 }
