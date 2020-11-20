@@ -12,7 +12,6 @@ namespace Section6
             Trip vancouverTrip = new Trip("Vancouver", 2345, 200, 95);
 
             Console.WriteLine(vancouverTrip);
-            Console.WriteLine($"Miles Per Gallon: {vancouverTrip.MilesPerGallon()}");
             Assert.AreEqual(24.68, vancouverTrip.MilesPerGallon(), 0.01);
         }
 
@@ -22,7 +21,6 @@ namespace Section6
             Trip vancouverTrip = new Trip("Vancouver", 2345, 200, 95);
 
             Console.WriteLine(vancouverTrip);
-            Console.WriteLine($"Cost Per Mile: {vancouverTrip.CostPerMile()}");
             Assert.AreEqual(0.085, vancouverTrip.CostPerMile(), 0.001);
         }
     }

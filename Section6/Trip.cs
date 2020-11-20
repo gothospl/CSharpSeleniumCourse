@@ -44,7 +44,12 @@ namespace Section6
 
         public override string ToString()
         {
-            return $"Trip to {Destination}: {DistanceTravelled} miles. Money spent on fuel: ${TotalCostOfFuel}. Fuel consumed: {FuelConsumed} gallons.";
+            return $"Trip to {Destination}: " +
+                $"\nDistance Travelled: {DistanceTravelled} miles. " +
+                $"\nMoney spent on fuel: {TotalCostOfFuel.ToString("c")}. " +
+                $"\nFuel consumed: {FuelConsumed} gallons." +
+                $"\nMiles Per Gallon: {MilesPerGallon().ToString("f0")}" +
+                $"\nCost Per Mile: {CostPerMile().ToString("c")}";
         }
     }
 }
