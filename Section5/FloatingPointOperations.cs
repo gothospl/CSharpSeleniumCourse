@@ -5,65 +5,56 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace Section5
 {
-    /// <summary>
-    /// Summary description for FloatingPointOperations
-    /// </summary>
     [TestClass]
     public class FloatingPointOperations
     {
-        public FloatingPointOperations()
+        static double number1, number2;
+
+        [ClassInitialize]
+        public static void NumberInitialize(TestContext testContext)
         {
-            //
-            // TODO: Add constructor logic here
-            //
+            number1 = 10.5;
+            number2 = 5.0;
         }
-
-        private TestContext testContextInstance;
-
-        /// <summary>
-        ///Gets or sets the test context which provides
-        ///information about and functionality for the current test run.
-        ///</summary>
-        public TestContext TestContext
-        {
-            get
-            {
-                return testContextInstance;
-            }
-            set
-            {
-                testContextInstance = value;
-            }
-        }
-
-        #region Additional test attributes
-        //
-        // You can use the following additional attributes as you write your tests:
-        //
-        // Use ClassInitialize to run code before running the first test in the class
-        // [ClassInitialize()]
-        // public static void MyClassInitialize(TestContext testContext) { }
-        //
-        // Use ClassCleanup to run code after all tests in a class have run
-        // [ClassCleanup()]
-        // public static void MyClassCleanup() { }
-        //
-        // Use TestInitialize to run code before running each test 
-        // [TestInitialize()]
-        // public void MyTestInitialize() { }
-        //
-        // Use TestCleanup to run code after each test has run
-        // [TestCleanup()]
-        // public void MyTestCleanup() { }
-        //
-        #endregion
 
         [TestMethod]
-        public void TestMethod1()
+        public void Test_Addition()
         {
-            //
-            // TODO: Add test logic here
-            //
+            double sum = number1 + number2;
+            Console.WriteLine(sum);
+            Assert.AreEqual(15.5, sum);
+        }
+
+        [TestMethod]
+        public void Test_Substraction()
+        {
+            double difference = number1 - number2;
+            Console.WriteLine(difference);
+            Assert.AreEqual(5.5, difference);
+        }
+
+        [TestMethod]
+        public void Test_Multiplication()
+        {
+            double product = number1 * number2;
+            Console.WriteLine(product);
+            Assert.AreEqual(52.5, product);
+        }
+
+        [TestMethod]
+        public void Test_Division()
+        {
+            double quotient = number1 / number2;
+            Console.WriteLine(quotient);
+            Assert.AreEqual(2.1, quotient);
+        }
+
+        [TestMethod]
+        public void Test_Modulus()
+        {
+            double modulus = number1 % number2;
+            Console.WriteLine(modulus);
+            Assert.AreEqual(0.5, modulus);
         }
     }
 }
