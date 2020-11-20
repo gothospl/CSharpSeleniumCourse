@@ -8,33 +8,37 @@ namespace Section6
 {
     class Employee
     {
-        public int EmployeeNumber { get; set; }
-        public string FirstName { get; set; }
-        public string LastName { get; set; }
-        public string DateOfHire { get; set; }
-        public string JobDescription { get; set; }
-        public string Department { get; set; }
-        public int MonthlySalary { get; set; }
-
-        public Employee(int eNumber, string fName, string lName, string hireDate, string jobDesc, string dept, int salary)
+        //Constructors
+        public Employee(int id)
         {
-            EmployeeNumber = eNumber;
-            FirstName = fName;
-            LastName = lName;
-            DateOfHire = hireDate;
-            JobDescription = jobDesc;
-            Department = dept;
-            MonthlySalary = salary;
+            EmployeeID = id;
         }
 
-        public string FirstNameSpaceLastName()
+        public Employee(string name, int id, string title)
         {
-            return $"{this.FirstName} {this.LastName}";
+            Name = name;
+            EmployeeID = id;
+            JobTitle = title;
         }
 
-        public string LastNameCommaSpaceFirstName()
+        //Properties
+        public int EmployeeID { get; set; }
+        public string Name { get; set; }
+        public string JobTitle { get; set; }
+
+        //Methods
+        public string JobLocation()
         {
-            return $"{this.LastName}, {this.FirstName}";
+            if (JobTitle == "Manager")
+            {
+                return "Boston";
+            }
+            else if (JobTitle == "Staff")
+            {
+                return "Chicago";
+            }
+
+            return "New York";
         }
     }
 }

@@ -13,7 +13,7 @@ namespace Section6
         [TestMethod]
         public void FirstNameSpaceLastName_Test()
         {
-            Employee newGuy = new Employee(112, "Frank", "Underwood", "2011/02/29", "Grade A A**hole", "HR", 8500);
+            EmployeeForQuiz newGuy = new EmployeeForQuiz(112, "Frank", "Underwood", "2011/02/29", "Grade A A**hole", "HR", 8500);
             Console.WriteLine($"\"Frank Underwood\"  ---  \"{newGuy.FirstNameSpaceLastName()}\"");
             Assert.AreEqual("Frank Underwood", newGuy.FirstNameSpaceLastName());
         }
@@ -21,7 +21,7 @@ namespace Section6
         [TestMethod]
         public void LastNameCommaSpaceFirstName_Test()
         {
-            Employee newGuy = new Employee(112, "Frank", "Underwood", "2011//02//29", "Grade A A**hole", "HR", 8500);
+            EmployeeForQuiz newGuy = new EmployeeForQuiz(112, "Frank", "Underwood", "2011//02//29", "Grade A A**hole", "HR", 8500);
             Console.WriteLine($"\"Underwood, Frank\"  ---  \"{newGuy.LastNameCommaSpaceFirstName()}\"");
             Assert.AreEqual("Underwood, Frank", newGuy.LastNameCommaSpaceFirstName());
         }
