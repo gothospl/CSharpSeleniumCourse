@@ -7,8 +7,16 @@ namespace Section6
     public class CarTest
     {
         [TestMethod]
-        public void TestMethod1()
+        public void Class_Car_Color_Set()
         {
+            //arrange
+            Car thisCar = new Car("black", 4, false);
+
+            //act
+
+            //assert
+            Assert.AreEqual("black", thisCar.Color);
+
         }
     }
 }

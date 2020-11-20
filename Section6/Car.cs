@@ -44,5 +44,18 @@ namespace Section6
             NumberOfDoors = doors;
             IsConvertable = convertable;
         }
+
+        public void Accelerate()
+        {
+            Console.WriteLine("Speeding up!");
+        }
+
+        public bool FamilyCar()
+        {
+            if (NumberOfDoors >= 4)
+                return true;
+            else
+                return false;
+        }
     }
 }
