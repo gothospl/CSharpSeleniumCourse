@@ -52,6 +52,7 @@
     <Compile Include="DecimalOperations.cs" />
     <Compile Include="EqualityAndRelationship.cs" />
     <Compile Include="FloatingPointOperations.cs" />
+    <Compile Include="IfAndElse.cs" />
     <Compile Include="IntegerOperations.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SectionQuiz.cs" />
