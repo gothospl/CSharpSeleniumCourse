@@ -55,6 +55,8 @@
     <Compile Include="MathHelper.cs" />
     <Compile Include="MethodTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="PropertyTaxCalculator.cs" />
+    <Compile Include="PropertyTaxTest.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
