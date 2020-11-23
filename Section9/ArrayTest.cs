@@ -28,5 +28,41 @@ namespace Section9
                 Console.WriteLine(score);
             }
         }
+
+        [TestMethod]
+        public void Pass_Array_Method()
+        {
+            int[] scores = { 2, 4, 6, 8, 10 };
+            int sum = TotalScores(scores);
+        }
+
+        public int TotalScores(int[] scores)
+        {
+            int sum = 0;
+            foreach(int score in scores)
+            {
+                sum += score;
+            }
+            return sum;
+        }
+
+        [TestMethod]
+        public void Pass_Array_Element()
+        {
+            int[] scores = { 2, 4, 6, 8, 10 };
+
+            foreach (int score in scores)
+            {
+                Console.WriteLine(CheckScore(score));
+            }
+        }
+
+        public string CheckScore(int score)
+        {
+            if (score >= 6)
+                return "Pass";
+            else
+                return "Fail";
+        }
     }
 }
