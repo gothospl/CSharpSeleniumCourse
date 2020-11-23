@@ -64,5 +64,23 @@ namespace Section9
             else
                 return "Fail";
         }
+
+        [TestMethod]
+        public void Array_Class_Methods()
+        {
+            double[] waterDepth = { 12.4, 3.5, 6.8 };
+            Array.Sort(waterDepth);
+            foreach (double wVal in waterDepth)
+            {
+                Console.Write($"{wVal}\t");
+            }
+
+            Array.Reverse(waterDepth);
+            foreach (double wVal in waterDepth)
+            {
+                Console.Write($"{wVal}\t");
+            }
+
+        }
     }
 }
