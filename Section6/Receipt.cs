@@ -10,14 +10,9 @@ namespace Section6
     {
         //Variables
         private int receiptNumber;
-        private string dateOfPurchase;
         private int customerNumber;
-        private string customerName;
-        private string customerAddress;
-        private string customerPhoneNumber;
         private int itemNumber;
-        private string description;
-        private float unitPrice;
+        private decimal unitPrice;
         private int quantityPurchased;
 
         //Properties
@@ -62,7 +57,7 @@ namespace Section6
             }
         }
         public string Description { get; set; }
-        public float UnitPrice
+        public decimal UnitPrice
         {
             get
             {
@@ -89,7 +84,7 @@ namespace Section6
 
         //Constructors
         public Receipt(int receiptNumber, string dateOfPurchase, int customerNumber, string customerName, string customerAddress,
-                       string customerPhoneNumber, int itemNumber, string description, float unitPrice, int quantityPurchased)
+                       string customerPhoneNumber, int itemNumber, string description, decimal unitPrice, int quantityPurchased)
         {
             ReceiptNumber = receiptNumber;
             DateOfPurchase = dateOfPurchase;
@@ -104,7 +99,7 @@ namespace Section6
         }
 
         //Methods
-        public float TotalCost()
+        public decimal CalculateTotalCost()
         {
             return UnitPrice * QuantityPurchased;
         }
@@ -113,7 +108,7 @@ namespace Section6
         {
             return $"Customer: {CustomerName}" +
                 $"\nPhone: {CustomerPhoneNumber}" +
-                $"\nTotal Purchases: {TotalCost().ToString("c")}";
+                $"\nTotal Purchases: {CalculateTotalCost().ToString("c")}";
         }
     }
 }
