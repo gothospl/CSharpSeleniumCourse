@@ -49,6 +49,7 @@
     <Reference Include="System.Core" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BreakAndContinue.cs" />
     <Compile Include="DoWhile.cs" />
     <Compile Include="ForLoops.cs" />
     <Compile Include="NestedLoopsQuiz.cs" />
