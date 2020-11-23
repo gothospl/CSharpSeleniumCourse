@@ -61,5 +61,26 @@ namespace Section8
             MathHelper.NumbersRef(ref number1);
             Assert.AreEqual(7, number1);
         }
+
+        [TestMethod]
+        public void Test_Tuples()
+        {
+            Tuple<int, string, bool> myTuple = new Tuple<int, string, bool>(1, "cat", true);
+
+            if(myTuple.Item1 == 1)
+            {
+                Console.WriteLine(myTuple.Item1);
+            }
+
+            if (myTuple.Item2 == "dog")
+            {
+                Console.WriteLine(myTuple.Item2);
+            }
+
+            if (myTuple.Item3)
+            {
+                Console.WriteLine(myTuple.Item3);
+            }
+        }
     }
 }
