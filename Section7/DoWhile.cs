@@ -9,11 +9,16 @@ namespace Section7
         [TestMethod]
         public void Test_Do_While()
         {
+            int sum = 0;
+            int number = 1;
             do
             {
-
+                sum += number;
+                number++;
             }
-            while (condition);
+            while (number <= 10);
+
+            Assert.AreEqual(55, sum);
         }
     }
 }
