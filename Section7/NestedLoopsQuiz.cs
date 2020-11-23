@@ -15,7 +15,7 @@ namespace Section7
             {
                 while (j >= 6)
                 {
-                    Console.WriteLine($"Outer: {i}      Inner: {j}");
+                    Console.WriteLine($"Outer: {i}\tInner: {j}");
                     j--;
                 }
                 i++;
