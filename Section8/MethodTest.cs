@@ -14,6 +14,23 @@ namespace Section8
         }
 
         [TestMethod]
+        public void Test_Static_Square_Named()
+        {
+            Assert.AreEqual(36, MathHelper.Square(aValue: 6));
+        }
+
+        [TestMethod]
+        public void Test_Named_Parameters()
+        {
+            int sum = MathHelper.AddNumber(bValue: 32, aValue: 112);
+            Assert.AreEqual(sum, 144);
+            int sum10 = MathHelper.AddNumber(0);
+            Assert.AreEqual(sum10, 10);
+            int sum26 = MathHelper.AddNumber(bValue: 4);
+            Assert.AreEqual(sum26, 26);
+        }
+
+        [TestMethod]
         public void Test_Employee_Overload_String()
         {
             Employee testEmployee = new Employee("John Curtin", 12345, "Manager");
