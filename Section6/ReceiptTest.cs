@@ -10,7 +10,7 @@ namespace Section6
         [TestCategory("Positive")]
         public void Receipt_Number_Valid_Test()
         {
-            Receipt TestReceipt = new Receipt(17, "2020-04-30", 24, "Tyler Durden", "Paper Street 1, 19810 Wilmington, DE", "555-678", 231, "Sack of Fat", 12.34, 100);
+            Receipt TestReceipt = new Receipt(17, "2020-04-30", 24, "Tyler Durden", "Paper Street 1, 19810 Wilmington, DE", "555-678", 231, "Sack of Fat", 12.34M, 100);
             Assert.AreEqual(17, TestReceipt.ReceiptNumber);
         }
 
