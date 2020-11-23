@@ -45,5 +45,21 @@ namespace Section8
             string result = testEmployee.PayType(testEmployee.EmployeeID);
             Assert.AreEqual("Salary", result);
         }
+
+        [TestMethod]
+        public void Test_Out_Parameter()
+        {
+            int number1;
+            MathHelper.NumbersOut(out number1);
+            Assert.AreEqual(6, number1);
+        }
+
+        [TestMethod]
+        public void Test_Ref_Parameter()
+        {
+            int number1 = 0;
+            MathHelper.NumbersRef(ref number1);
+            Assert.AreEqual(7, number1);
+        }
     }
 }

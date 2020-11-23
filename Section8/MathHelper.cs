@@ -20,7 +20,7 @@ namespace Section8
 
         public static void NumbersOut(out int value)
         {
-            value = 7;
+            value = 6;
         }
 
         public static void NumbersRef(ref int value)
