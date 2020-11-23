@@ -9,14 +9,8 @@ namespace Section8
         [TestMethod]
         public void Test_Square()
         {
-            MethodTest myTest = new MethodTest();
-            int result = myTest.Square(6);
+            int result = MathHelper.Square(6);
             Assert.AreEqual(36, result);
-        }
-
-        public int Square(int aValue)
-        {
-            return aValue * aValue;
         }
     }
 }
