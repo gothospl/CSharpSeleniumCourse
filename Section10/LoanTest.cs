@@ -9,7 +9,7 @@ namespace Section10
         [TestMethod]
         public void Car_Loan_Test()
         {
-            CarLoan testLoan = new CarLoan(1, "Wilhelm", "Hohenzollern", 0.075M, 12000M, 4, "2011", "Toyota Corolla", "Japanese", "Red");
+            CarLoan testLoan = new CarLoan(1, "Wilhelm", "Hohenzollern", 0.075M, 12000M, 4, "2011", "Corolla", "Toyota", "Red");
             Assert.AreEqual(20.3125M, testLoan.CalculateInterest());
             Console.WriteLine(testLoan);
         }
