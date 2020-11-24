@@ -11,7 +11,7 @@ namespace Section10
         private string major;
         private string studentId;
 
-        public Student(string id, string fname, string lname, int anAge, DateTime dob string maj, string sId)
+        public Student(string id, string fname, string lname, int anAge, DateTime dob, string maj, string sId)
             :base(id, fname, lname, anAge, dob)
         {
             major = maj;
