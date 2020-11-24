@@ -18,11 +18,6 @@ namespace Section10
             studentId = sId;
         }
 
-        public override string GetExcerciseHabits()
-        {
-            return "Boxing and jogging";
-        }
-
         public DateTime GetDOB()
         {
             return base.dateOfBirth;

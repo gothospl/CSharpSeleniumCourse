@@ -49,9 +49,13 @@
     <Reference Include="System.Core" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CarLoan.cs" />
     <Compile Include="CodingQuizTest.cs" />
+    <Compile Include="HomeLoan.cs" />
     <Compile Include="InhertianceTest.cs" />
     <Compile Include="LectureTicket.cs" />
+    <Compile Include="Loan.cs" />
+    <Compile Include="LoanTest.cs" />
     <Compile Include="MusicalTicket.cs" />
     <Compile Include="Pen.cs" />
     <Compile Include="Person.cs" />
