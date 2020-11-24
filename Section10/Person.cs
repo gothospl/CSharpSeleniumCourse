@@ -1,5 +1,4 @@
-﻿
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -13,6 +12,7 @@ namespace Section10
         private string lastname;
         private string firstname;
         private int age;
+        private DateTime dateOfBirth;
 
         public Person()
         {
@@ -20,12 +20,13 @@ namespace Section10
 
         }
 
-        public Person(string id, string lname, string fname, int anAge)
+        public Person(string id, string lname, string fname, int anAge, DateTime dob)
         {
             idNumber = id;
             lastname = lname;
             firstname = fname;
             age = anAge;
+            dateOfBirth = dob;
         }
 
         public abstract string GetExcerciseHabits();
