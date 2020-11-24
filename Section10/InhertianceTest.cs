@@ -22,5 +22,13 @@ namespace Section10
             DateTime dob = new DateTime(1980, 5, 20);
             Student testStudent = new Student("666", "Anakin", "Skywalker", 23, dob, "Younglings", "3");
         }
+
+        [TestMethod]
+        public void Test_Protected()
+        {
+            DateTime dob = new DateTime(1980, 5, 20);
+            Student testStudent = new Student("666", "Anakin", "Skywalker", 23, dob, "Younglings", "3");
+            DateTime student_DOB = testStudent.GetDOB();
+        }
     }
 }

@@ -12,7 +12,7 @@ namespace Section10
         private string lastname;
         private string firstname;
         private int age;
-        private DateTime dateOfBirth;
+        protected DateTime dateOfBirth;
 
         public Person()
         {

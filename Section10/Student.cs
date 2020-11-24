@@ -22,5 +22,10 @@ namespace Section10
         {
             return "Boxing and jogging";
         }
+
+        public DateTime GetDOB()
+        {
+            return base.dateOfBirth;
+        }
     }
 }
