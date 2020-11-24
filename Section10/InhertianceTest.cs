@@ -12,6 +12,8 @@ namespace Section10
             //Person testPerson = new Person("1234", "Palpatine", "Sheev", 72);
 
             Student testStudent = new Student("666", "Anakin", "Skywalker", 23, "Younglings", "3");
+
+            string response = testStudent.GetExcerciseHabits();
         }
     }
 }

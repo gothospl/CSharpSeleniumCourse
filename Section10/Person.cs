@@ -27,5 +27,7 @@ namespace Section10
             firstname = fname;
             age = anAge;
         }
+
+        public abstract string GetExcerciseHabits();
     }
 }

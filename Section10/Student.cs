@@ -17,5 +17,10 @@ namespace Section10
             major = maj;
             studentId = sId;
         }
+
+        public override string GetExcerciseHabits()
+        {
+            return "Boxing and jogging";
+        }
     }
 }
