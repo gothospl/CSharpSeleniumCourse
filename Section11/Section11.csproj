@@ -55,7 +55,11 @@
   <ItemGroup>
     <Compile Include="InterfaceSample.cs" />
     <Compile Include="ITransactions.cs" />
+    <Compile Include="ITraveler.cs" />
+    <Compile Include="Person.cs" />
+    <Compile Include="Professor.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Student.cs" />
     <Compile Include="Transaction.cs" />
   </ItemGroup>
   <ItemGroup>
