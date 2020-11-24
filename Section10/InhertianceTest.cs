@@ -52,5 +52,11 @@ namespace Section10
             }
         }
 
+        [TestMethod]
+        public void Test_Sealed()
+        {
+            Pen testPen = new Pen("ball");
+        }
+
     }
 }

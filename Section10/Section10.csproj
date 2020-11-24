@@ -53,6 +53,7 @@
     <Compile Include="InhertianceTest.cs" />
     <Compile Include="LectureTicket.cs" />
     <Compile Include="MusicalTicket.cs" />
+    <Compile Include="Pen.cs" />
     <Compile Include="Person.cs" />
     <Compile Include="PlayTicket.cs" />
     <Compile Include="Student.cs" />
