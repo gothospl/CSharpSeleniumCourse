@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Section10
 {
-    abstract class Person
+    class Person
     {
         private string idNumber;
         private string lastname;
@@ -29,6 +29,10 @@ namespace Section10
             dateOfBirth = dob;
         }
 
-        public abstract string GetExcerciseHabits();
+        //public abstract string GetExcerciseHabits();
+        public virtual string HoursOfSleep()
+        {
+            return "A person gets 8 hours of sleep.";
+        }
     }
 }

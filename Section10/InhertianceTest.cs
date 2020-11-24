@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace Section10
@@ -30,5 +31,26 @@ namespace Section10
             Student testStudent = new Student("666", "Anakin", "Skywalker", 23, dob, "Younglings", "3");
             DateTime student_DOB = testStudent.GetDOB();
         }
+
+        [TestMethod]
+        public void Test_Student_As_person()
+        {
+            ArrayList PersonList = new ArrayList();
+
+            DateTime dob = new DateTime(1990, 7, 21);
+
+            Person testPerson = new Person("112", "Luke", "Skywalker", 19, dob);
+
+            Student testStudent = new Student("666", "Anakin", "Skywalker", 23, dob, "Younglings", "3");
+
+            PersonList.Add(testPerson);
+            PersonList.Add(testStudent);
+
+            foreach(Person item in PersonList)
+            {
+                Console.WriteLine(item.HoursOfSleep());
+            }
+        }
+
     }
 }

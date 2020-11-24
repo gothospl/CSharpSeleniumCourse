@@ -27,5 +27,10 @@ namespace Section10
         {
             return base.dateOfBirth;
         }
+
+        public override string HoursOfSleep()
+        {
+            return "A student gets 5 hours of sleep";
+        }
     }
 }
