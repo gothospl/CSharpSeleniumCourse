@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Section10
 {
-    class Person
+    abstract class Person
     {
         private string idNumber;
         private string lastname;
