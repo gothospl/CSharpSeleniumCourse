@@ -8,9 +8,6 @@ namespace Section11
 {
     class Professor : Person, ITraveler
     {
-        private string empId;
-        private string subject;
-
         public Professor(string id, string fname, string lname, int anAge, string empId, string subject)
             : base(id, fname, lname, anAge)
         {
@@ -34,6 +31,14 @@ namespace Section11
         public string GetStartLocation()
         {
             return "Home";
+        }
+
+        public override string ToString()
+        {
+            return base.ToString() +
+                $"\n Destination: {GetDestination()}" +
+                $"\n Start Loaction: {GetStartLocation()}" +
+                $"\n Miles: {DetermineMiles()}";
         }
     }
 }

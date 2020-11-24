@@ -13,12 +13,19 @@ namespace Section11
         private string firstName;
         private int age;
 
-        public Person(string id, string lname, string fname, int ageV)
+        public Person(string id, string fname, string lname, int ageV)
         {
             idNumber = id;
             lastName = lname;
             firstName = fname;
             age = ageV;
+        }
+
+
+        public override string ToString()
+        {
+            return $"First Name: {firstName}" +
+                $"\nLast Name: {lastName}";
         }
     }
 }

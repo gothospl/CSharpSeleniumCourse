@@ -9,8 +9,8 @@ namespace Section10
     class Person
     {
         private string idNumber;
-        private string lastname;
-        private string firstname;
+        private string lastName;
+        private string firstName;
         private int age;
         protected DateTime dateOfBirth;
 
@@ -23,8 +23,8 @@ namespace Section10
         public Person(string id, string lname, string fname, int anAge, DateTime dob)
         {
             idNumber = id;
-            lastname = lname;
-            firstname = fname;
+            lastName = lname;
+            firstName = fname;
             age = anAge;
             dateOfBirth = dob;
         }

@@ -32,5 +32,13 @@ namespace Section11
         {
             return "School";
         }
+
+        public override string ToString()
+        {
+            return base.ToString() +
+                $"\n Destination: {GetDestination()}" +
+                $"\n Start Loaction: {GetStartLocation()}" +
+                $"\n Miles: {DetermineMiles()}";
+        }
     }
 }
