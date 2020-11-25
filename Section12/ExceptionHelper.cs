@@ -10,9 +10,16 @@ namespace Section12
     {
         public static void DivisionTest(int aValue, int bValue)
         {
-            int totalScores = 10;
-            int countOfScores = 0;
-            double average = totalScores / countOfScores;
+            try
+            {
+                int totalScores = 10;
+                int countOfScores = 0;
+                double average = totalScores / countOfScores;
+            }
+            catch(Exception exception)
+            {
+                Console.WriteLine(exception.Message);
+            }
         }
     }
 }
