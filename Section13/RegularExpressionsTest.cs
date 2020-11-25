@@ -11,17 +11,11 @@ namespace Section13
         public void Match_Email()
         {
             string[] addresses = { "AAAAAAA@gmail.com", "AAAaaaAa!@gmail.com" };
-
             string pattern = @"^[0-9A-Z]([-.\w]*[0-9A-Z])*$";
-
             bool response = false;
 
             foreach (var address in addresses)
-            {
                 response = IsEmail(address, pattern);
-            }
-
-
             Assert.IsTrue(response);
         }
 
@@ -37,9 +31,7 @@ namespace Section13
         public static bool IsEmail(string email, string pattern)
         {
             if (email != null)
-            {
                 return Regex.IsMatch(email, pattern);
-            }
             else return false;
         }
     }
