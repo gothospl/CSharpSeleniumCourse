@@ -49,9 +49,11 @@
     <Reference Include="System.Core" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BodyMassIndexCalculator.cs" />
     <Compile Include="ExceptionHelper.cs" />
     <Compile Include="ExceptionTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="QuizTester.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

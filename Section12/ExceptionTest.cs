@@ -24,7 +24,14 @@ namespace Section12
         [TestMethod]
         public void Test_StateCheck()
         {
-            ExceptionHelper.CheckStateOK("MA");
+            try
+            {
+                ExceptionHelper.CheckStateOK("MA");
+            }
+            catch (Exception exception)
+            {
+                Console.WriteLine(exception.Message);
+            }
         }
     }
 
