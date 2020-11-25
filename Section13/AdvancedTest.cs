@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace Section13
@@ -44,6 +45,36 @@ namespace Section13
         public void Delegate_Test()
         {
             DelegateDemo.Main();
+        }
+
+        delegate int del(int i);
+
+        [TestMethod]
+        public void Test_Lambda()
+        {
+            del myDelegate = x => x * x;
+            int j = myDelegate(5);
+            Assert.AreEqual(25, j);
+        }
+
+        [TestMethod]
+        public void Test_List_Lambda()
+        {
+            List<int> elements = new List<int>() { 10, 20, 31, 40 };
+            int oddIndex = elements.FindIndex(x => x % 2 != 0);
+            Console.WriteLine(oddIndex);
+        }
+
+        delegate void TestDelegate(string s);
+        [TestMethod]
+        public void Test_Statement_Lambda()
+        {
+            TestDelegate del = n =>
+            {
+                string s = n + " World";
+                Console.WriteLine(s);
+            };
+            del("Hello");
         }
     }
 }
