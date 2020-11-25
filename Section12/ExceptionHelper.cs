@@ -39,7 +39,7 @@ namespace Section12
                    state = st.ToUpper();
                    break;
                 default:
-                    Exception exception = new Exception("State not Part" + " of Atlantic ICW");
+                    CustomException exception = new CustomException("State not Part" + " of Atlantic ICW");
                     throw exception;
             }
         }

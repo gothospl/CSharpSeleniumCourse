@@ -50,6 +50,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BodyMassIndexCalculator.cs" />
+    <Compile Include="CustomException.cs" />
     <Compile Include="ExceptionHelper.cs" />
     <Compile Include="ExceptionTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
