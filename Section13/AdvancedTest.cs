@@ -39,5 +39,11 @@ namespace Section13
             dPi = (double)oPi;
             Console.WriteLine(dPi);
         }
+
+        [TestMethod]
+        public void Delegate_Test()
+        {
+            DelegateDemo.Main();
+        }
     }
 }

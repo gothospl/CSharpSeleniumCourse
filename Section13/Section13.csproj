@@ -51,6 +51,7 @@
   <ItemGroup>
     <Compile Include="AdvancedTest.cs" />
     <Compile Include="Animal.cs" />
+    <Compile Include="DelegateDemo.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
