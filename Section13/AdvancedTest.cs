@@ -48,7 +48,6 @@ namespace Section13
         }
 
         delegate int del(int i);
-
         [TestMethod]
         public void Test_Lambda()
         {
