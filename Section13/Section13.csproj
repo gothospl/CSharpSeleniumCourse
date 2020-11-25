@@ -5,11 +5,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{F1151524-5FC1-4FA6-8AD8-5E8B1398E47D}</ProjectGuid>
+    <ProjectGuid>{93196FBF-A26B-4BE0-B146-4A8A23328D4B}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Section12</RootNamespace>
-    <AssemblyName>Section12</AssemblyName>
+    <RootNamespace>Section13</RootNamespace>
+    <AssemblyName>Section13</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{3AC096D0-A1C2-E12C-1390-A8335801FDAB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
@@ -49,14 +49,8 @@
     <Reference Include="System.Core" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BodyMassIndexCalculator.cs" />
-    <Compile Include="CustomException.cs" />
-    <Compile Include="ExamHelper.cs" />
-    <Compile Include="ExamTester.cs" />
-    <Compile Include="ExceptionHelper.cs" />
-    <Compile Include="ExceptionTest.cs" />
+    <Compile Include="UnitTest1.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="QuizTester.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
