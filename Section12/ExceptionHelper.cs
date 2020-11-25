@@ -20,6 +20,10 @@ namespace Section12
             {
                 Console.WriteLine(exception.Message);
             }
+            finally
+            {
+                Console.WriteLine("Division operation");
+            }
         }
     }
 }
