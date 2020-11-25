@@ -25,5 +25,23 @@ namespace Section12
                 Console.WriteLine("Division operation");
             }
         }
+        public static string state;
+
+        public static void CheckStateOK(string st)
+        {
+            switch(st.ToUpper())
+            {
+                case "FL":
+                case "GA":
+                case "NC":
+                case "SC":
+                case "VA":
+                   state = st.ToUpper();
+                   break;
+                default:
+                    Exception exception = new Exception("State not Part" + " of Atlantic ICW");
+                    throw exception;
+            }
+        }
     }
 }

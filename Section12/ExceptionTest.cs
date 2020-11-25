@@ -20,6 +20,12 @@ namespace Section12
         {
             ExceptionHelper.DivisionTest(10, 0);
         }
+
+        [TestMethod]
+        public void Test_StateCheck()
+        {
+            ExceptionHelper.CheckStateOK("MA");
+        }
     }
 
     
